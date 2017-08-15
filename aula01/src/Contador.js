@@ -1,3 +1,7 @@
+//implementar
+// caso menor que 0 mostrar msg
+// caso maior retirar a msg
+
 import React from 'react';
 
 export default class Contador extends React.Component {
@@ -10,14 +14,19 @@ export default class Contador extends React.Component {
   }
 
   decrementar(){
-    this.setState({
+    if (this.setState.valor > 0){
+      this.setState({
         contador : this.state.contador - 1,
-    });
+        
+      });
+    }
+      
   }
 
   incrementar(){
-    this.setState({
+      this.setState({
         contador : this.state.contador + 1,
+        
     });
   }
 
@@ -25,8 +34,9 @@ export default class Contador extends React.Component {
     return(
       <div>
         <h1>{this.state.contador}</h1>
-          <button bsStyle="primary" onClick={this.decrementar.bind(this)}>-</button>
-          <button bsStyle="primary" onClick={this.incrementar.bind(this)}>+</button>
+          <button onClick={this.decrementar.bind(this)}>-</button>
+          <button onClick={this.incrementar.bind(this)}>+</button>
+          <h2 id="teste"></h2>
       </div>
     );
   }
