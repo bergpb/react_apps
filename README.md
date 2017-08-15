@@ -1,6 +1,6 @@
 ## Aulas de React.JS ministradas pelo Prof. Edvan Chaves
 
-###Exemplos de apps com React.JS
+##Exemplos de apps com React.JS
 <ul>
 <li>Primeiro clone o repositório</li>
 <li>Após isso, certifique-se que o node.js e npm estejam instalados</li>
