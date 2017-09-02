@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export class ListarProdutos extends React.Component{
+export default class ListarProdutos extends React.Component{
     
     render(){
         return(
-            <div>
-                <p>Listar Produtos</p>
+            <div className="text-center">
+                <h1>Listar Produtos</h1>
             </div>
         );
     }
-    
 }
