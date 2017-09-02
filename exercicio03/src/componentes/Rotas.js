@@ -15,7 +15,7 @@ export default class Rotas extends React.Component{
                 <nav className="navbar navbar-default">
                       <div className="container-fluid">
                         <div className="navbar-header">
-                          <span className="navbar-brand"><Link to="/inicio">Bem Vindos</Link></span>
+                          <span className="navbar-brand"><Link to="/">Bem Vindos</Link></span>
                         </div>
                         <ul className="nav navbar-nav">
                           <li><Link to="/novo">Cadastrar</Link></li>
@@ -26,7 +26,7 @@ export default class Rotas extends React.Component{
                       </div>
                     </nav>
                 <div id="container wall">
-                    <Route exact path="/inicio" component={BemVindos} />
+                    <Route exact path="/" component={BemVindos} />
                     <Route path="/lista" component={ListarProdutos} />
                     <Route path="/novo" component={CadastroProduto} />
                     <Route path="/info" component={Info} />
